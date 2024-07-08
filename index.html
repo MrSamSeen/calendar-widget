@@ -10,11 +10,13 @@
 
 <body>
     <div class="calendar-container">
-        <div class="controls">
-            <button onclick="changeMonth(-1)">Previous</button>
+        <div class="controls-1">
             <select id="monthSelect" onchange="updateCalendar()"></select>
-            <select id="yearSelect" onchange="updateCalendar()"></select>
-            <button onclick="changeMonth(1)">Next</button>
+            <select id="yearSelect" onchange="updateCalendar()"></select><br />
+        </div>
+        <div class="controls-2">
+            <button onclick="changeMonth(-1)">&lt;&lt; </button>
+            <button onclick="changeMonth(1)">&gt;&gt;</button>
             <button onclick="goToToday()">Today</button>
         </div>
         <div id="calendar"></div>
