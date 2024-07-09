@@ -50,7 +50,7 @@ function populateSelects() {
     });
 
     const currentYear = currentDate.getFullYear();
-    for (let year = currentYear - 10; year <= currentYear + 10; year++) {
+    for (let year = currentYear - 50; year <= currentYear + 50; year++) {
         const option = document.createElement('option');
         option.value = year;
         option.textContent = year;
